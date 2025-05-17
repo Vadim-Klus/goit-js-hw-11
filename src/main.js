@@ -11,7 +11,7 @@ const form = document.querySelector('.form');
 const input = form.querySelector('input[name="search-text"]');
 
 
-
+  
 form.addEventListener('submit', async event => {
     event.preventDefault();
     const query = event.target.elements['search-text'].value.trim();
@@ -36,5 +36,4 @@ form.addEventListener('submit', async event => {
     } finally {
       hideLoader();
     }
-});
-  
+  });
